@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+:root{
+  --colorB: #7b0262;
+  --colorA: #0e0123;
+  --colorC: black;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html, body{
+  height: 100%;
+}
+body{
+  background: linear-gradient(var(--colorB),var(--colorA));
+  padding-bottom: 2.5em;
+}
+header{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-top: 100px;
+
+  height: 5em;
+  background-color: black;
+  color: white;
+  text-align:center;
+  clear: both;
+
+}
+
+
+header .logo{
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+
+}
+#logocontainer{
+  background-color: var(--colorA);
+  border-radius: 10px;
+  padding: 15px;
+}
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+header ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: white;
+  border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+  background: white;
+  color: var(--colorA);
+}
+
+.sec{
+    padding-top: 30px;
+    position: absolute;
+    top:700px;
+    padding-bottom: 150px;
+    width: 100%;
+    background: var(--colorA);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+
+
+}
+.sec li{
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 10px;
+  min-width: 30vw;
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  border-radius: 10px;
+}
+.sec li a{
+  height: 2em;
+  font-weight: 500;
+  font-size: 2em;
+
+
+  color: var(--colorB);
+  background:white;
+  text-decoration: none;
+  border-radius: 10px;
+}
